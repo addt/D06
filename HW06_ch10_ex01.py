@@ -18,8 +18,7 @@ def nested_sum(lst):
 
 
 def main():
-    ltt = [[4,5,[1,2,3]],1,2,3,4,5,[3,2,1]]
-    print(nested_sum(ltt))
+    pass
 
 if __name__ == '__main__':
     main()
