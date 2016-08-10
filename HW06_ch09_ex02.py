@@ -14,11 +14,31 @@
 # Imports
 
 # Body
+def has_no_e(wrd):
+    if 'e' in wrd:
+        return True
+    else:
+        return False
 
+def print_no_e():
+    file_handle = open('roster.txt','r')
+    file_lines = file_handle.readlines()
+    count = 0
+    for i in file_lines:
+        if 'e' in i:
+            count += 1
+    file_handle.close()
+    return str((count/len(file_lines) * 100))
 
 ##############################################################################
 def main():
-    pass  # Call your function(s) here.
+    print(has_no_e("avi"))
+    print(has_no_e("python"))
+    print(has_no_e("testing"))
+
+    lst_with_e = ["testing", "avi", "asus", "android"]
+    lst_without_e = ["dixit", "addt", "htc"]
+    print(print_no_e())
 
 if __name__ == '__main__':
     main()
